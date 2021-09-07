@@ -1,0 +1,18 @@
+server:
+    port: 10681
+    servlet:
+        context-path: /stock-user
+spring:
+    application:
+        name: stock-user
+    cloud:
+        nacos:
+            discovery:
+                server-addr: 127.0.0.1:8848
+                username: nacos
+                password: nacos
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
